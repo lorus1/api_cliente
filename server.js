@@ -2,7 +2,7 @@
 const app = require('./app');
 const http = require('http');
 const fs = require('fs');
-const https = require('https');
+
 
 // Certificate
 //const privateKey = fs.readFileSync('/home/ec2-user/ssl/private.key', 'utf8');
@@ -20,8 +20,8 @@ const https = require('https');
 const httpServer = http.createServer(app);
 //const httpsServer = https.createServer(credentials, app);
 
-httpServer.listen(5000, () => {
-	console.log('HTTP Server running on port 80');
+httpServer.listen(8080, () => {
+	console.log('HTTP Server running on port 8080');
 });
 
 
